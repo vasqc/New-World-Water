@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Page from "./components/Page";
-import Footer from "./components/Footer";
+import Header from "./Components/Header";
+import Nav from "./Components/Nav";
+import Page from "./Components/Page";
+import Footer from "./Components/Footer";
 
 function App() {
   const [pages] = useState([
@@ -11,8 +11,8 @@ function App() {
     },
     { name: "portfolio" },
     { name: "contact" },
-    {
-      name: ""
+    { 
+      name: "Sign in"
     }
   ]);
 
