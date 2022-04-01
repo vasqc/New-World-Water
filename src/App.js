@@ -11,8 +11,8 @@ function App() {
     },
     { name: "portfolio" },
     { name: "contact" },
-    {
-      name: ""
+    { 
+      name: "Sign in"
     }
   ]);
 
