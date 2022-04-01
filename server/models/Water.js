@@ -1,42 +1,35 @@
 const { Schema } = require('mongoose');
-//const { INTEGER } = require('sequelize/types');
 
 // This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedBooks` array in User.js
 const waterSchema = new Schema({
-  authors: [
+  Brand: [
     {
       type: String,
     },
   ],
-  description: {
+  source: {
     type: String,
     required: true,
   },
-  // saved book id from GoogleBooks
-  bookId: {
+  description: {
     type: String,
     required: true,
   },
   image: {
     type: String,
   },
-  link: {
-    type: String,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  //TODO: add the pageCount property. It should be a Number. 
-  pageCount: {
-    type: Number,
-    required: true,
-  },
-  //TODO: add the publishedDate property. It should be a String. 
-  publishedDate: {
+  TDS: {
     type: String,
     required: true,
   }, 
+  Price: {
+    type: Number,
+    required: true,
+  },
+  link: {
+    type: String,
+  }
+   
 });
 
 module.exports = waterSchema;
