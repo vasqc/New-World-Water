@@ -55,11 +55,13 @@ function App() {
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
+              <Route component={Footer} />
             </Switch>
           </StoreProvider>
-          <Footer />
+         
         </div>
         
+          <Footer />
       </Router>
     </ApolloProvider>
     

@@ -1,12 +1,13 @@
 :root {
-    --primary: #232F3E;
-    --secondary: #F3A847;
-    --tertiary: #B12704;
-    --light: #fafafa;
-    --dark: #272f32;
+    --primary: #3f64ca42;
+    --secondary: #0c72e7;
+    --tertiary: #353433;
+    --light: #000000;
+    --dark: #070707;
     --error: rgb(228, 46, 1);
     --spacing-one: calc(1rem * 0.5);
     --spacing-two: calc(1rem);
+    --page: #32323321;
   }
   
   * {
@@ -16,6 +17,8 @@
   html,
   body {
     min-height: 100%;
+    background: var(--page);
+    
   }
   
   body {
@@ -24,8 +27,9 @@
     font-family: 'Karla', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 12px;
     color: var(--dark);
+    
   }
   
   h1,
@@ -92,9 +96,9 @@
     text-decoration: none;
     padding: 0.25rem 1rem;
     border-radius: .5rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+    border: aqua;
+    outline: aquamarine;
+    cursor: grab;
     margin: 0 1px;
     background-color: var(--secondary);
   }
