@@ -1,13 +1,14 @@
 :root {
-    --primary: #3f64ca42;
-    --secondary: #0c72e7;
-    --tertiary: #353433;
-    --light: #000000;
-    --dark: #070707;
+    --primary: #56bde6ea;
+    --secondary: #0b6bd8;
+    --tertiary: #272625;
+    --light: #7a7a7a;
+    --dark: #a39f9f;
     --error: rgb(228, 46, 1);
     --spacing-one: calc(1rem * 0.5);
     --spacing-two: calc(1rem);
-    --page: #32323321;
+    --page: #676769de;
+    --page-font: #000000;
   }
   
   * {
@@ -18,13 +19,35 @@
   body {
     min-height: 100%;
     background: var(--page);
+    background-image: image();
+    
+  }
+  #root{
+    position: relative;
+    height: 100vh;
+
+  }
+  footer {
+    text-align: center;
+    background: var(--page);
+    width: 100vw;
+    color: whitesmoke;
+    position:fixed;
+    bottom: 0;
+    font-size: 20pt;
+  }
+  footer a {
+    padding: 5px;
+  }
+  icon {
+    color: whitesmoke;
     
   }
   
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Comic', sans-serif;
     font-weight: 400;
     line-height: 1.5;
     font-size: 12px;
@@ -117,11 +140,11 @@
   }
   
   span[role="img"] {
-    cursor: default;
+    cursor: grabbing;
   }
   
   form {
-    width: 40%;
+    width: 50%;
   }
   
   input {
@@ -139,7 +162,7 @@
   }
   
   .container {
-    width: 85%;
+    width: 75%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -148,6 +171,7 @@
   .flex-row {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
   }
   
   .space-between {

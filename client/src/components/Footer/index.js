@@ -1,12 +1,13 @@
 import React from 'react';
+//import { Link } from "react-router-dom";
 
 function Footer() {
 
   // Replace links with social media profiles
   const icons = [
     {
-      name: "fab fa-github",
-      link: "https://github.com"
+      name: "fab fa-amazon",
+      link: "https://amazon.com"
     },
     {
       name: "fab fa-instagram",
@@ -15,11 +16,20 @@ function Footer() {
     {
       name: "fab fa-youtube",
       link: "https://www.youtube.com/user/finewaters"
-    }
+    },
+    {
+      name: "fab fa-google",
+      link: "https://google.com"
+    },
+    {
+      name: "fab fa-gitkraken",
+      link: "https://github.com/vasqc/New-World-Water"
+    },
+
   ]
 
   return (
-    <footer className="">
+    <footer>
       {icons.map(icon =>
       (
         <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>

@@ -17,7 +17,7 @@ import Nav from './components/Nav';
 import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
 import AboutUs from './pages/AboutUs';
 
 const httpLink = createHttpLink({
@@ -47,7 +47,8 @@ function App() {
           <StoreProvider>
             <Nav />
             <Switch>
-              <Route exact path="/" component={Home} />
+            <Route exact path="/" component={LandingPage} />
+              <Route exact path="/home" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/aboutUs" component={AboutUs} />
               <Route exact path="/signup" component={Signup} />
@@ -61,9 +62,11 @@ function App() {
          
         </div>
         
-          <Footer />
+        <Footer />
       </Router>
     </ApolloProvider>
+  
+    
     
   );
 }
