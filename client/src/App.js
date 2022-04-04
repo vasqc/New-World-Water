@@ -19,6 +19,8 @@ import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import Footer from './components/Footer';
 import AboutUs from './pages/AboutUs';
+import LandingPage from './pages/LandingPage';
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -47,7 +49,7 @@ function App() {
           <StoreProvider>
             <Nav />
             <Switch>
-            <Route exact path="/" component={LandingPage} />
+              <Route exact path="/" component={LandingPage} />
               <Route exact path="/home" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/aboutUs" component={AboutUs} />
