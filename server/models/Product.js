@@ -30,7 +30,6 @@ const productSchema = new Schema({
   est: {
     type: Number,
     required: true,
-    trim: true
   },
   image: {
     type: String
@@ -49,9 +48,6 @@ const productSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'Category',
     required: true
-  },
-  est: {
-    type: Number
   },
   company_website: {
     type: String,

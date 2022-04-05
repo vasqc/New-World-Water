@@ -12,11 +12,12 @@ const typeDefs = gql`
     origin: String
     TDS: Int
     carbonation: String
-    company_wedsite: String
+    company_website: String
     image: String
     quantity: Int
     price: Float
     category: Category
+    est: Int
   }
   type Order {
     _id: ID
