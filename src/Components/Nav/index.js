@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Signin from '../Signin';
+import Login from '../Login'
 
 function Nav(props) {
   const {
@@ -31,6 +32,7 @@ function Nav(props) {
             </li>
           ))}
           <li> <Signin /> </li>
+          <li> < Login /> </li>
         </ul>
       </nav>
   );
