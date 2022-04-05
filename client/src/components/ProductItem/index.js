@@ -15,9 +15,9 @@ function ProductItem(item) {
     _id,
     price,
     quantity,
-    TDS,
-    source,
-    origin
+    // TDS,
+    // source,
+    // origin
   } = item;
 
   const { cart } = state

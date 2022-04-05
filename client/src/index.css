@@ -1,13 +1,13 @@
 :root {
-    --primary: #56bde6ea;
+    --primary: #030303ea;
     --secondary: #0b6bd8;
-    --tertiary: #272625;
-    --light: #7a7a7a;
-    --dark: #a39f9f;
+    --tertiary: #6e6e6e;
+    --light: #e2e0e0;
+    --dark: #424242;
     --error: rgb(228, 46, 1);
     --spacing-one: calc(1rem * 0.5);
     --spacing-two: calc(1rem);
-    --page: #676769de;
+    --page: #e6e6e6de;
     --page-font: #000000;
   }
   
