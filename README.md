@@ -21,7 +21,10 @@ https://git.heroku.com/new-world-water.git
 
 Group Members:
 
-Marisa Rosel
-Edward McCarthy
-Souhila Boukari
-Christian Vasquez
+Marisa Rosel-https://github.com/Marisa28
+
+Edward McCarthy-https://github.com/emccar22
+
+Souhila Boukari-https://github.com/souhila27
+
+Christian Vasquez-https://github.com/vasqc

@@ -25,7 +25,7 @@ db.once('open', async () => {
       origin: 'New Zealand',
       est: '2003',
       TDS: 120 ,
-      carbonation: 'Added carbonation',
+      carbonation: 'Added Carbonation',
       company_website: 'https://antipodes.co.nz'
     },
     {
@@ -38,7 +38,7 @@ db.once('open', async () => {
       origin: 'Slovenia',
       est: '2011',
       TDS: 7481 ,
-      carbonation: 'natural sparkling',
+      carbonation: 'Natural Sparkling',
       company_website: 'https://www.roiwater.com'
     },
     {
@@ -51,7 +51,7 @@ db.once('open', async () => {
       origin: 'Germany',
       est: '1888',
       TDS: 2527 ,
-      carbonation: 'natural sparkling',
+      carbonation: 'Natural Sparkling',
       company_website: 'https://www.gerolsteiner.de/'
     },
     {
@@ -64,7 +64,7 @@ db.once('open', async () => {
       origin: 'Fiji',
       est: '1996',
       TDS: 222 ,
-      carbonation: 'still',
+      carbonation: 'Still',
       company_website: 'https://www.fijiwater.com/'
     },
     {
@@ -73,11 +73,11 @@ db.once('open', async () => {
       category: categories[0]._id,
       price: 100.99,
       quantity: 50,
-      source: 'spring',
+      source: 'Spring',
       origin: 'France',
       est: '1837',
       TDS: 1200 ,
-      carbonation: 'natural sparkling',
+      carbonation: 'Natural Sparkling',
       company_website: 'https://www.amazon.com/badoit/s?k=badoit'
     },
     {
@@ -103,7 +103,7 @@ db.once('open', async () => {
       origin: 'Romania',
       est: '2010',
       TDS: 200,
-      carbonation: 'still',
+      carbonation: 'Still',
       company_website: 'https://www.aquacarptica.com'
     },
     {
@@ -116,7 +116,7 @@ db.once('open', async () => {
       origin: 'Spain',
       est: '1881',
       TDS: 2900 ,
-      carbonation: 'natural sparkling',
+      carbonation: 'Natural Sparkling',
       company_website: 'https://www.vichycatalan.com'
     },
     {
@@ -129,7 +129,7 @@ db.once('open', async () => {
       origin: 'U.K.',
       est: '1989',
       TDS: 312 ,
-      carbonation: 'Added carbonation',
+      carbonation: 'Added Carbonation',
       company_website: 'https://www.hildon.com/'
     },
     {
@@ -142,7 +142,7 @@ db.once('open', async () => {
       origin: 'France',
       est: '1826',
       TDS: 357 ,
-      carbonation: 'still',
+      carbonation: 'Still',
       company_website: 'https://www.evian.com/en_us'
     },
     {
@@ -155,7 +155,7 @@ db.once('open', async () => {
       origin: 'Argentina',
       est: '2005',
       TDS: 190 ,
-      carbonation: 'Added sparkling',
+      carbonation: 'Added Sparkling',
       company_website: 'https://www.facebook.com/LauquenWaterCo/'
     },
     {
@@ -168,7 +168,7 @@ db.once('open', async () => {
       origin: 'Portugal',
       est: '1920',
       TDS: 829 ,
-      carbonation: 'Added sparkling',
+      carbonation: 'Added Sparkling',
       company_website: 'https://www.aguadovimeiro.pt'
     },
     {
