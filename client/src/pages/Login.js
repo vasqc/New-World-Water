@@ -7,8 +7,10 @@ import Auth from '../utils/auth';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
+// eslint-disable-next-line
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+// eslint-disable-next-line
 import TextField from '@mui/material/TextField'
 import { grey } from '@mui/material/colors';
 
@@ -37,6 +39,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
 }));
 function ChildModal() {
   const [open, setOpen] = useState(false);
+  // eslint-disable-next-line
   const handleOpen = () => {
     setOpen(true);
   };
@@ -100,6 +103,7 @@ function Login(props) {
   return (
     <>
       <Link to onClick={handleOpen}>Log In</Link>
+      
       <Modal
         open={open}
         onClose={handleClose}

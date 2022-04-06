@@ -1,13 +1,13 @@
 :root {
     --primary: #030303ea;
-    --secondary: #0b6bd8;
+    
     --tertiary: #6e6e6e;
     --light: #e2e0e0;
     --dark: #424242;
     --error: rgb(228, 46, 1);
-    --spacing-one: calc(1rem * 0.5);
-    --spacing-two: calc(1rem);
-    --page: #e6e6e6de;
+    --spacing-one: calc(2rem * 0.25);
+    --spacing-two: calc(3rem * 0.5);
+    
     --page-font: #000000;
   }
   
@@ -32,7 +32,7 @@
     background: var(--page);
     width: 100vw;
     color: whitesmoke;
-    position:fixed;
+    position: relative;
     bottom: 0;
     font-size: 20pt;
   }
@@ -47,10 +47,10 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Comic', sans-serif;
+
     font-weight: 400;
     line-height: 1.5;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--dark);
     
   }
@@ -68,7 +68,7 @@
   }
   
   h1 {
-    font-size: 2.25rem;
+    font-size: 4.25rem;
   }
   
   h2 {
@@ -100,10 +100,13 @@
     color: var(--tertiary);
     text-decoration: none;
     font-weight: bold;
+    font: xx-large;
+    font-family: monospace;
   }
   
   a:hover {
     text-decoration: underline;
+    
   }
   
   header {
@@ -162,7 +165,7 @@
   }
   
   .container {
-    width: 75%;
+    width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -235,4 +238,5 @@
     .card {
       width: 100%;
     }
+   
   }

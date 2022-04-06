@@ -10,18 +10,15 @@ const productSchema = new Schema({
   },
   source: {
     type: String,
-    required: true,
     trim: true
 
   },
   TDS: {
     type: Number,
-    required: true,
     trim: true
   },
   origin: {
     type: String,
-    required: true,
     trim: true
   },
   carbonation: {
@@ -29,7 +26,6 @@ const productSchema = new Schema({
   },
   est: {
     type: Number,
-    required: true,
   },
   image: {
     type: String

@@ -17,17 +17,17 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Liquid Death',
-      image: 'LD_Still_x400@2x.jpeg',
+      name: 'Antipodes',
+      image: 'antipodesL.jpeg',
       category: categories[0]._id,
-      price: 1.69,
-      quantity: 500,
-      source: 'Mountain water from the Alps.',
-      origin: 'Swiss',
-      est: '2010',
-      TDS: 211 ,
-      carbonation: 'still/sparkling',
-      company_website: 'https://liquiddeath.com/'
+      price: 69.99,
+      quantity: 50,
+      source: 'Spring',
+      origin: 'New Zealand',
+      est: '2003',
+      TDS: 120 ,
+      carbonation: 'Added carbonation',
+      company_website: 'https://antipodes.co.nz'
     },
     {
       name: 'ROI',
@@ -110,7 +110,7 @@ db.once('open', async () => {
     {
       name: 'Vichy Catalan',
       image: 'vichycatalanL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 54.99,
       quantity: 127,
       source: 'Spring',
@@ -162,7 +162,7 @@ db.once('open', async () => {
     {
       name: 'Vimeiro',
       image: 'vimeiroL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 9.99,
       quantity: 200,
       source: 'Spring',
@@ -171,7 +171,40 @@ db.once('open', async () => {
       TDS: 829 ,
       carbonation: 'Added sparkling',
       company_website: 'https://www.aguadovimeiro.pt'
+    },
+    {
+      name: 'Nalgene 32oz',
+      image: 'nalgeneB.webp',
+      category: categories[3]._id,
+      price: 11.99,
+      quantity: 2,
+      company_website: 'https://nalgene.com'
+    },
+    {
+      name: 'Corkcicle 22oz',
+      image: 'CorkcicleL.jpeg',
+      category: categories[3]._id,
+      price: 42.99,
+      quantity: 19,
+      company_website: 'https://corkcicle.com'
+    },
+    {
+      name: 'Porter Glass 18oz',
+      image: 'porterB.jpeg',
+      category: categories[3]._id,
+      price: 29.99,
+      quantity: 49,
+      company_website: 'https://wandpdesign.com/products/porter-water-bottle-regular'
+    },
+    {
+      name: 'Yeti Rambler 46oz',
+      image: 'yetiB.png',
+      category: categories[3]._id,
+      price: 54.99,
+      quantity: 135,
+      company_website: 'https://yeti.com'
     }
+    
   ]);
 
   console.log('products seeded');

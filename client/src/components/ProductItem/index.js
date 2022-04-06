@@ -15,9 +15,7 @@ function ProductItem(item) {
     _id,
     price,
     quantity,
-    // TDS,
-    // source,
-    // origin
+    
   } = item;
 
   const { cart } = state
@@ -49,8 +47,13 @@ function ProductItem(item) {
         <img
           alt={name}
           src={`/images/${image}`}
+  
         />
         <p>{name}</p>
+        <p className="card px-2 py-2">
+          
+
+        </p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
