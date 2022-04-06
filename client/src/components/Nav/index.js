@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import Login from "../../pages/Login";
 
 //const [showModal, setShowModal] = useState(false);
 function Nav() {
@@ -36,9 +37,7 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
-            <Link to="/login">
-              Login
-            </Link>
+            <Login />
           </li>
           <li className="mx-1">
             <Link to="/aboutus">
