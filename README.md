@@ -23,5 +23,5 @@ Group Members:
 
 Marisa Rosel
 Edward McCarthy
-Souhila Bourak
+Souhila Boukari
 Christian Vasquez
