@@ -16,6 +16,7 @@ function ProductItem(item) {
     price,
     quantity,
     
+    
   } = item;
 
   const { cart } = state
@@ -61,6 +62,7 @@ function ProductItem(item) {
       </div>
       <button onClick={addToCart}>Add to cart</button>
     </div>
+    
   );
 }
 

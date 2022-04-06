@@ -5,7 +5,6 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Water' },
     { name: 'Sparkling' },
     { name: 'Still' },
     { name: 'Equipment'}
@@ -32,7 +31,7 @@ db.once('open', async () => {
     {
       name: 'ROI',
       image: 'roiL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 100.99,
       quantity: 500,
       source: 'Spring',
@@ -45,7 +44,7 @@ db.once('open', async () => {
     {
       name: 'Gerolsteiner',
       image: 'gerolsteinerL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 2.89,
       quantity: 750,
       source: 'Artesian',
@@ -58,7 +57,7 @@ db.once('open', async () => {
     {
       name: 'Fiji',
       image: 'fijiNL.jpeg',
-      category: categories[2]._id,
+      category: categories[1]._id,
       price: 1.99,
       quantity: 1500,
       source: 'Artesian',
@@ -71,7 +70,7 @@ db.once('open', async () => {
     {
       name: 'Badoit',
       image: 'badoitL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 100.99,
       quantity: 50,
       source: 'spring',
@@ -84,7 +83,7 @@ db.once('open', async () => {
     {
       name: 'Waiakea',
       image: 'waiakeanL.jpeg',
-      category: categories[2]._id,
+      category: categories[1]._id,
       price: 2.89,
       quantity: 3500,
       source: 'Artesian',
@@ -97,7 +96,7 @@ db.once('open', async () => {
     {
       name: 'Aqua Carpatica',
       image: 'aquaCarpaticaL.png',
-      category: categories[2]._id,
+      category: categories[1]._id,
       price: 3.89,
       quantity: 385,
       source: 'Spring',
@@ -123,7 +122,7 @@ db.once('open', async () => {
     {
       name: 'Hildon',
       image: 'hildonL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 22.99,
       quantity: 500,
       source: 'Well',
@@ -136,7 +135,7 @@ db.once('open', async () => {
     {
       name: 'Evian',
       image: 'evianL.jpeg',
-      category: categories[2]._id,
+      category: categories[1]._id,
       price: 1.99,
       quantity: 2500,
       source: 'Spring',
@@ -149,7 +148,7 @@ db.once('open', async () => {
     {
       name: 'Lauquen',
       image: 'lauquenL.jpeg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 22.99,
       quantity: 89,
       source: 'Artesian',
@@ -175,7 +174,7 @@ db.once('open', async () => {
     {
       name: 'Nalgene 32oz',
       image: 'nalgeneB.webp',
-      category: categories[3]._id,
+      category: categories[2]._id,
       price: 11.99,
       quantity: 2,
       company_website: 'https://nalgene.com'
@@ -183,7 +182,7 @@ db.once('open', async () => {
     {
       name: 'Corkcicle 22oz',
       image: 'CorkcicleL.jpeg',
-      category: categories[3]._id,
+      category: categories[2]._id,
       price: 42.99,
       quantity: 19,
       company_website: 'https://corkcicle.com'
@@ -191,7 +190,7 @@ db.once('open', async () => {
     {
       name: 'Porter Glass 18oz',
       image: 'porterB.jpeg',
-      category: categories[3]._id,
+      category: categories[2]._id,
       price: 29.99,
       quantity: 49,
       company_website: 'https://wandpdesign.com/products/porter-water-bottle-regular'
@@ -199,7 +198,7 @@ db.once('open', async () => {
     {
       name: 'Yeti Rambler 46oz',
       image: 'yetiB.png',
-      category: categories[3]._id,
+      category: categories[2]._id,
       price: 54.99,
       quantity: 135,
       company_website: 'https://yeti.com'
