@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 
+
 import Cart from "../components/Cart";
 import { useStoreContext } from "../utils/GlobalState";
 import {
@@ -13,6 +14,7 @@ import {
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
+//import { Icon } from "@mui/material";
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -81,8 +83,11 @@ function Detail() {
     idbPromise("cart", "delete", { ...currentProduct });
   };
 
+
   return (
-    <>
+   
+   <>
+
       {currentProduct && cart ? (
         <div className="container my-1">
           <Link to="/">← Back to Products</Link>
@@ -106,32 +111,41 @@ function Detail() {
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          {/* <div>
 
-          <div className= "rowB">
+          </div> */}
+          
+          <div className="flex-container" >
             <ul>
               <li>
-                <strong>Source:</strong>
+                <strong>Source: </strong>
                 {currentProduct.source}
               </li>
               <li>
-                <strong>Origin:</strong>
+                <strong>Origin: </strong>
                 {currentProduct.origin}
               </li>
               <li>
-                <strong>Est:</strong>
+                <strong>Est: </strong>
                 {currentProduct.est}
               </li>
               <li>
-                <strong>TDS:</strong>
-                {currentProduct.TDS}
+                <strong>TDS: </strong>
+                {currentProduct.TDS} mg/L
               </li>
               <li>
-                <strong>Carbonation:</strong>
+                <strong>Carbonation: </strong>
                 {currentProduct.carbonation}
+              </li>
+              <li>
+              <strong>Website: </strong>
+                <Link>
+                
+                {currentProduct.company_website}
+                </Link>
               </li>
             </ul>
           </div>
-
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
