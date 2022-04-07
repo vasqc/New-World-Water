@@ -13,6 +13,10 @@ Welcome to our group project about water.
 
 
 Technologies used:
+React App, HTML, CSS, JavaScript
+JSX, MUI(node library)
+MongoDB
+GraphQL
 
 
 Link to Heroku: 
