@@ -107,15 +107,18 @@ function Detail() {
             </button>
           </p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
           {/* <div>
 
           </div> */}
           
           <div className="flex-container" >
+
+            <img
+              src={`/images/${currentProduct.image}`}
+              alt={currentProduct.name}
+            />
+
+
             <ul>
               <li>
                 <strong>Source: </strong>
