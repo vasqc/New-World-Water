@@ -253,7 +253,7 @@
     }
     .flex-container {
       display: flex;
-     flex-wrap: wrap-reverse;
+     flex-wrap: wrap;
     }
     
     .flex-container > div {

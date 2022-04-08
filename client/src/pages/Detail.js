@@ -89,7 +89,7 @@ function Detail() {
    <>
 
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className="container my-1 ">
           <Link to="/">← Back to Products</Link>
 
           <h2>{currentProduct.name}</h2>
@@ -106,17 +106,13 @@ function Detail() {
               Remove from Cart
             </button>
           </p>
-
+          <div className="flex-container" > 
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
-          {/* <div>
-
-          </div> */}
           
-          <div className="flex-container" >
-            <ul>
+          <ul>
               <li>
                 <strong>Source: </strong>
                 {currentProduct.source}
@@ -146,7 +142,7 @@ function Detail() {
               </li>
             </ul>
           </div>
-        </div>
+         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
       <Cart />

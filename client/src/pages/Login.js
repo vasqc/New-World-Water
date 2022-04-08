@@ -7,10 +7,10 @@ import Auth from '../utils/auth';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
-// eslint-disable-next-line
+
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-// eslint-disable-next-line
+
 import TextField from '@mui/material/TextField'
 import { grey } from '@mui/material/colors';
 
