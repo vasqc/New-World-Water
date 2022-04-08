@@ -24,7 +24,7 @@ GraphQL
 
 
 Link to Heroku: 
-https://git.heroku.com/new-world-water.git
+https://new-world-water.herokuapp.com/
 
 Git Hub:
 https://github.com/vasqc/New-World-Water
