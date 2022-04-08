@@ -102,7 +102,7 @@ function Login(props) {
 
   return (
     <>
-      <Link to onClick={handleOpen}>Log In</Link>
+      <Link to='' onClick={handleOpen}>Log In</Link>
       
       <Modal
         open={open}
